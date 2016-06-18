@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp.co.nirvana0rigin.dice.Display">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/c0"
+                android:layout_width="84dp"
+                android:layout_height="84dp" />
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <ImageView
+                android:id="@+id/c1"
+                android:layout_width="84dp"
+                android:layout_height="84dp" />
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <ImageView
+                android:id="@+id/c2"
+                android:layout_width="84dp"
+                android:layout_height="84dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/c3"
+                android:layout_width="84dp"
+                android:layout_height="84dp" />
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <ImageView
+                android:id="@+id/c4"
+                android:layout_height="84dp"
+                android:layout_width="84dp"/>
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <TextView
+                android:id="@+id/result"
+                android:gravity="center"
+                android:textSize="60sp"
+                android:textColor="@color/red"
+                android:layout_width="84dp"
+                android:layout_height="84dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

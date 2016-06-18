@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp.co.nirvana0rigin.dice.All">
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white"
+        android:id="@+id/f_all_l">
+        <Button
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:background="@drawable/button_all"
+            android:textSize="60sp"
+            android:text="@string/all"
+            android:textColor="@color/red"
+            android:id="@+id/f_all"/>
+    </LinearLayout>
+
+</FrameLayout>
