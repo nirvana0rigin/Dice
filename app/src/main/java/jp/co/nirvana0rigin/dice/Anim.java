@@ -38,52 +38,57 @@ public class Anim {
         anim = new AnimationDrawable();
 
         int f0 = res.getIdentifier(("d"+randam[0]), "drawable", con.getPackageName());
-        int f7 = res.getIdentifier(("d"+randam[1]), "drawable", con.getPackageName());
-        int f8 = res.getIdentifier(("d"+randam[2]), "drawable", con.getPackageName());
-        int f9 = res.getIdentifier(("d"+randam[3]), "drawable", con.getPackageName());
+        int f1 = res.getIdentifier(("d"+randam[1]), "drawable", con.getPackageName());
+        int f2 = res.getIdentifier(("d"+randam[2]), "drawable", con.getPackageName());
+        int f3 = res.getIdentifier(("d"+randam[3]), "drawable", con.getPackageName());
+        int f4 = res.getIdentifier(("d"+randam[4]), "drawable", con.getPackageName());
+        int f5 = res.getIdentifier(("d"+randam[5]), "drawable", con.getPackageName());
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            frame1 = con.getDrawable(R.drawable.d1);
-            frame2 = con.getDrawable(R.drawable.d2);
-            frame3 = con.getDrawable(R.drawable.d3);
-            frame4 = con.getDrawable(R.drawable.d4);
-            frame5 = con.getDrawable(R.drawable.d5);
-            frame6 = con.getDrawable(R.drawable.d6);
-            frame7 = con.getDrawable(f7);
-            frame8 = con.getDrawable(f8);
-            frame9 = con.getDrawable(f9);
+            frame1 = con.getDrawable(f1);
+            frame2 = con.getDrawable(f5);
+            frame3 = con.getDrawable(f3);
+            frame4 = con.getDrawable(f0);
+            frame5 = con.getDrawable(f2);
+            frame6 = con.getDrawable(f4);
+            frame7 = con.getDrawable(f3);
+            frame8 = con.getDrawable(f2);
+            frame9 = con.getDrawable(f1);
             frame0 = con.getDrawable(f0);
 
         } else {
-            frame1 = res.getDrawable(R.drawable.d1);
-            frame2 = res.getDrawable(R.drawable.d2);
-            frame3 = res.getDrawable(R.drawable.d3);
-            frame4 = res.getDrawable(R.drawable.d4);
-            frame5 = res.getDrawable(R.drawable.d5);
-            frame6 = res.getDrawable(R.drawable.d6);
-            frame7 = res.getDrawable(f7);
-            frame8 = res.getDrawable(f8);
-            frame9 = res.getDrawable(f9);
+            frame1 = res.getDrawable(f1);
+            frame2 = res.getDrawable(f5);
+            frame3 = res.getDrawable(f3);
+            frame4 = res.getDrawable(f0);
+            frame5 = res.getDrawable(f2);
+            frame6 = res.getDrawable(f4);
+            frame7 = res.getDrawable(f3);
+            frame8 = res.getDrawable(f2);
+            frame9 = res.getDrawable(f1);
             frame0 = res.getDrawable(f0);
         }
         Drawable[] frameD = {frame0,frame1,frame2,frame3,frame4,frame5,frame6,frame7,frame8,frame9};
         frame = frameD;
 
+        anim.addFrame(frame5, 50);  //3000
+        anim.addFrame(frame6, 50);
         anim.addFrame(frame1, 50);
         anim.addFrame(frame2, 50);
         anim.addFrame(frame3, 50);
-        anim.addFrame(frame4, 50);  //200
-        anim.addFrame(frame5, 100);
-        anim.addFrame(frame6, 100);
-        anim.addFrame(frame1, 100);  //500
-        anim.addFrame(frame2, 150);
-        anim.addFrame(frame3, 150);  //800
-        anim.addFrame(frame4, 200);
-        anim.addFrame(frame5, 200);  //1200
-        anim.addFrame(frame6, 250);
-        anim.addFrame(frame7, 250);  //1700
-        anim.addFrame(frame8, 300);
-        anim.addFrame(frame9, 350);  //2350
-        anim.addFrame(frame0, 350);
+        anim.addFrame(frame4, 50);  //
+        anim.addFrame(frame5, 100);  //2700
+        anim.addFrame(frame6, 100);  //
+        anim.addFrame(frame1, 100);  //
+        anim.addFrame(frame2, 150);  //2400
+        anim.addFrame(frame3, 150);  //
+        anim.addFrame(frame4, 200);  //
+        anim.addFrame(frame5, 250);  //
+        anim.addFrame(frame6, 300);  //1700
+        anim.addFrame(frame7, 350);
+        anim.addFrame(frame8, 400);
+        anim.addFrame(frame9, 500);
+        anim.addFrame(frame0, 300);
         anim.setOneShot(true);
         v.setBackground(anim);
         anim.start();

@@ -113,7 +113,12 @@ public class Display extends Sync {
         for ( int i = 0; i < 5; i++ ) {
             if(i+1 <= q ) {
                 sendResult += dices[i];
-                String d = ("d" + dices[i]);
+                String d;
+                if(oneMode != 0){
+                    d = "d" + oneMode;
+                }else {
+                    d = "d" + dices[i];
+                }
                 int r = res.getIdentifier(d, "drawable", con.getPackageName());
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     c[i].setBackground(con.getDrawable(r));
@@ -154,7 +159,7 @@ public class Display extends Sync {
             anim[i].startAnim(random[i]);
         }
         toActivity();
-        atEndTimer = new AtEndTimer(3000,1600);
+        atEndTimer = new AtEndTimer(3900,2000);
         atEndTimer.start();
     }
 
@@ -168,7 +173,7 @@ public class Display extends Sync {
         anim[0] = new Anim( res, con, c[0]);
         anim[0].startAnim(random);
         toActivity();
-        atEndTimer = new AtEndTimer(3000,1600);
+        atEndTimer = new AtEndTimer(3900,2000);
         atEndTimer.start();
     }
 	
