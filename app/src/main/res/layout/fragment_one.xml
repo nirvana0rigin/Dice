@@ -15,9 +15,9 @@
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:background="@drawable/button_one"
-            android:textSize="32sp"
+            android:textSize="24sp"
             android:textColor="@color/white"
-            android:text="@string/one"
+            android:text="@string/one_mode"
             android:id="@+id/f_one"/>
     </LinearLayout>
 

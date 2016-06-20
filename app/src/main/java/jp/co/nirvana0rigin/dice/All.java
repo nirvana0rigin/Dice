@@ -71,6 +71,11 @@ public class All extends Sync implements View.OnClickListener{
             removeButton(); 
         }else {
         	addButton();
+            if(quantity == 1){
+                all.setText(con.getString(R.string.one));
+            }else {
+                all.setText(quantity + (con.getString(R.string.quantity)) + "\n" + (con.getString(R.string.all)));
+            }
         }
     }
 
@@ -96,6 +101,9 @@ public class All extends Sync implements View.OnClickListener{
         toActivity();
         onButtonPressed();
     }
+
+
+
 
 
     //______________________________________________________________________to Activity

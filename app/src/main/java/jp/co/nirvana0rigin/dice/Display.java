@@ -136,7 +136,11 @@ public class Display extends Sync {
         if(oneMode !=0 ){
             sendResult = oneMode;
         }
-        result.setText(String.valueOf(sendResult));
+        if(started){
+            //結果表示は”？”のまま
+        }else {
+            result.setText(String.valueOf(sendResult));
+        }
         atEndTimer = null; 
     }
     
@@ -165,8 +169,7 @@ public class Display extends Sync {
 
     public void startAnimOne(){
     	oneMode = 1 ;
-        sendResult = 0;
-    	result.setText("?");
+        result.setText("?");
 		resetDisplay();
         int[] random = counter.getRandom();
         oneMode = random[0];

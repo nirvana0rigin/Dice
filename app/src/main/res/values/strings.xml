@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">Dice</string>
 
-    <string name="all">ALL</string>
-    <string name="change">change</string>
-    <string name="one">ONE</string>
-    <string name="reset">reset</string>
+    <string name="all">ぜんぶ\nふる</string>
+    <string name="one">1コ\nふる</string>
+    <string name="change">きりかえ</string>
+    <string name="one_mode">1コ\nふる</string>
+    <string name="quantity">コ</string>
 
     <string name="info">音声合成ソフトを入れてください</string>
     <string name="info2">英語でカウントします</string>
@@ -13,9 +14,9 @@
     
     <string name="r01">、だよ</string>
     <string name="r02">、だね</string>
-    <string name="r03">、だっぺ</string>
+    <string name="r03">、だぜ</string>
     <string name="r04">、だぞ</string>
-    <string name="r05">、かな</string>
+    <string name="r05">、だー</string>
     <string name="r06">、だよね</string>
     
     <string name="r11">ohh,</string>

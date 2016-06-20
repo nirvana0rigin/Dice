@@ -205,6 +205,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onChange() {
         display.changeDisplay();
+        all.resetStartButton();
         if(quantity ==1){
             one.removeButton();
         }else{
