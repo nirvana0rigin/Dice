@@ -12,12 +12,12 @@
     <string name="info3">日本語も英語もダメです</string>
     <string name="info4">音声ソフト死んでます</string>
     
-    <string name="r01">、だよ</string>
-    <string name="r02">、だね</string>
-    <string name="r03">、だぜ</string>
-    <string name="r04">、だぞ</string>
-    <string name="r05">、だー</string>
-    <string name="r06">、だよね</string>
+    <string name="r01">だよ</string>
+    <string name="r02">だね</string>
+    <string name="r03">だぜ</string>
+    <string name="r04">だぞ</string>
+    <string name="r05">だぴょん</string>
+    <string name="r06">だよね</string>
     
     <string name="r11">ohh,</string>
     <string name="r12">umm,</string>
